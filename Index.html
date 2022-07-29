@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body onload="mostrarpopup()">
     <header>
         <div class="container-grid posicionamentoheader">
             <a href=""><img class="logo" src="img/images/logo-site.gif" alt="Logo do Site"></a>
@@ -18,7 +18,7 @@
                 <a href="">periféricos</a>
                 <a href="">áudio e vídeo</a>
             </nav>
-            <a href="" onclick="mostrarmenu()"><img class="barras" src="img/bars-solid.svg" alt="menu-barras"</a>
+            <a href="" onclick="mostrarmenu()"><img class="barras" src="img/bars-solid.svg" alt="menu-barras"></a>
         </div>
     </header>
     <div class="banner">
@@ -42,6 +42,32 @@
             <h4>Nintendo Switch</h4>
         </div>
 </section>
+<footer>
+    <div class="rodape">
+        <div class="linksdosite">
+            <div class="linksredes">
+                <a href=""><img src="img/botoesredes.png"></a>
+                <ul>
+                    <li><a href="#">gamers</a></li>
+                    <li><a href="#">desktops</a></li>
+                    <li><a href="#">periféricos</a></li>
+                    <li><a href="#">áudio e vídeo</a></li>
+                </ul>
+                <div class="Textosroda">
+                    <p>It is a long established fact that a reader will be distracted <br> by the readable content of a page when looking <br> at its layout. The point of using Lorem Ipsum is that it has <br> a more-or-less normal distribution</p>
+                    <p>It is a long established fact that a reader will be distracted <br> the readable content of a page when looking <br> its layout. The point of using Lorem Ipsum is that it has <br>a more-or-less normal distribution</p>
+                </div>
+            </div class="assine">
+            <h2>Receba nossas ofertas</h2>
+            <form action="">
+                <input id="campo-email" type="email" placeholder="E-mail" required>
+                <button onclick="enviaremail">cadastrar</button>
+            </form>
+
+            </div>
+        </div>
+    </div>
+</footer>
 <script>
 let menu = document.getElementById("menu");
 
@@ -53,6 +79,7 @@ function mostrarmenu(){
     }
 }
 </script>
+<script src="js/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

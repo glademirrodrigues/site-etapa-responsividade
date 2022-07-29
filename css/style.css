@@ -77,7 +77,36 @@ header{
 .posicionamentoheader{
     position: relative;
 }
-@media screen and (max-width: 1200px) {
+footer{
+    background-color: #b1ff9f;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+        }
+        .rodape{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            align-items: center;
+            }
+            .linksredes a{
+                color: black;
+                text-decoration: none;
+            }
+            .linksredes img{
+                width: 150px;
+            }
+            .Textosroda{
+                display: flex;
+                justify-content: space-between;
+            }
+
+
+
+
+            @media screen and (max-width: 1200px) {
     .container-grid{
         width: 90%;
     }
@@ -87,8 +116,8 @@ header{
     .logo{
         width: 180px;
     }
+   }
 
-}
     @media screen and (max-width: 768px) {
         h1{
             color: aqua;
